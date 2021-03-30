@@ -1,0 +1,16 @@
+#!/bin/bash
+
+TODAYDATE=`date +"%Y-%m-%d"`
+OLDIFS=$IFS
+CURRENT_TIME="CURRENT_timestamp"
+WAC_ACCOUNT_STATUS_DELETED=3
+LOG=/home2/purge_lmes/init_sql_purge-${TODAYDATE}.log
+WORK_CUSTOMER_NUMBER=/home2/purge_lmes/working_customer-${TODAYDATE}.csv
+VERSION="v7.0.0"
+WAC_SID=""
+WAC_USR=""
+SCR_SID=""
+SCR_USR=""
+FIRST_EXECUTION=1
+REQUEST_PURGE_DATE="72 hours"
+CONNECTION="${CONNEXION_INFO}"
